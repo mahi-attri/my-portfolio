@@ -4,7 +4,7 @@
   color: white;
 }
 body {
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .firstSection {
   display: flex;
@@ -460,13 +460,201 @@ body {
 .fifthSection button:hover {
   background-color: #020617;
 }
-footer {
-  color: #6b7280;
-  background-color: #191d28;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 11;
+
+
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  .firstSection {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+  }
+  .firstSection > div {
+    width: 80%;
+  }
+  .leftSection {
+    margin: 50px 0;
+    margin-left: 0;
+    font-size: 2rem;
+  }
+  .rightSection {
+    margin-top: 20px;
+  }
+  .rightSection img {
+    margin: 0;
+    width: 80%;
+  }
+  .intro {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .interest div {
+    padding: 20px;
+    font-size: 10px;
+  }
+  .interest div h2 {
+    font-size: 1.5rem;
+  }
+  .interest div i {
+    font-size: 4rem;
+  }
+  .projects_all div {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 10px 0;
+  }
+  .projects_all h4,
+  .projects_all p {
+    margin-top: 20px;
+  }
+  .projects_all a {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .contact {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .fifthSection input,
+  .fifthSection textarea {
+    width: 100%;
+  }
+  .thirdSection {
+    padding: 20px;
+  }
+}
+
+/* Smaller Laptops and Larger Screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .firstSection {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+  }
+  .firstSection > div {
+    width: 80%;
+  }
+  .leftSection {
+    margin: 50px 0;
+    margin-left: 0;
+    font-size: 2.5rem;
+  }
+  .rightSection {
+    margin-top: 50px;
+  }
+  .rightSection img {
+    margin: 0;
+    width: 80%;
+  }
+  .intro {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .interest div {
+    padding: 30px;
+    font-size: 10px;
+  }
+  .interest div h2 {
+    font-size: 1.75rem;
+  }
+  .interest div i {
+    font-size: 5rem;
+  }
+  .projects_all div {
+    width: 45%;
+    height: auto;
+    padding: 30px;
+    margin: 10px 0;
+  }
+  .projects_all h4,
+  .projects_all p {
+    margin-top: 30px;
+  }
+  .projects_all a {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .contact {
+    width: 80%;
+    padding: 30px;
+    margin: 0 auto;
+  }
+  .fifthSection input,
+  .fifthSection textarea {
+    width: 100%;
+  }
+  .thirdSection {
+    padding: 30px;
+  }
+}
+
+/* Large Desktops */
+@media (min-width: 1025px) {
+  .firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+  }
+  .firstSection > div {
+    width: 30%;
+  }
+  .leftSection {
+    margin: 250px 0;
+    margin-left: 80px;
+    font-size: 3rem;
+  }
+  .rightSection img {
+    margin-right: 100px;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .rightSection {
+    margin-top: 100px;
+  }
+  .intro {
+    width: 65%;
+    padding: 50px;
+    margin: 0 auto;
+  }
+  .interest div {
+    padding: 50px;
+    font-size: 12px;
+  }
+  .interest div h2 {
+    font-size: 20px;
+  }
+  .interest div i {
+    font-size: 6rem;
+  }
+  .projects_all div {
+    width: 30%;
+    height: 400px;
+    padding: 50px;
+  }
+  .projects_all h4,
+  .projects_all p {
+    margin-top: 50px;
+  }
+  .projects_all a {
+    margin-top: -6px;
+    margin-left: 290px;
+  }
+  .contact {
+    width: 50%;
+    padding: 50px;
+    margin: 0 auto;
+  }
+  .fifthSection input,
+  .fifthSection textarea {
+    width: 100%;
+    max-width: 670px;
+  }
+  .thirdSection {
+    padding: 70px;
+  }
 }
