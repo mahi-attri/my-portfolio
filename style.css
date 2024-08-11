@@ -17,7 +17,7 @@ body {
   width: 30%;
 }
 .leftSection {
-  margin: 250px 0;
+  margin: 200px 0;
   margin-left: 80px;
   font-size: 3rem;
   position: relative;
@@ -31,7 +31,7 @@ body {
 .rightSection {
   position: relative;
   z-index: 3;
-  margin-top: 100px;
+  margin-top: -20px;
 }
 .yellow {
   color: #eab308;
@@ -207,13 +207,13 @@ body {
   padding: 10px 66px;
   position: relative;
   width: 40%;
-  left: 0;
+  left: 5%;
 }
 .right-container {
   padding: 10px 66px;
   position: relative;
   width: 40%;
-  left: 50%;
+  left: 48%;
 }
 .experience_list {
   padding: 20px 65px;
@@ -380,9 +380,8 @@ body {
 .fifthSection button:hover {
   background-color: #020617;
 }
-
 /* Mobile Devices */
-@media (max-width: 649px) {
+@media (max-width: 649px){
   .firstSection {
     flex-direction: column;
     align-items: center;
@@ -493,21 +492,24 @@ body {
     padding: 20px;
   }
 }
-
-@media (min-width: 650px) and (max-width: 1024px) {
+@media (min-width: 650px) and (max-width: 767px) {
+  .firstSection{
+    margin:30px 0;
+  }
   .leftSection {
+    margin:150px 0;
     margin-left: 20px;
     font-size: 2rem;
   }
   .content{
-    font-size:1.5rem;
+    font-size:1.7rem;
   }
   .rightSection {
     margin-top: 50px;
     margin-right:50px;
   }
   .rightSection img {
-    margin-top: 200px;
+    margin-top: 250px;
   }
   .box div {
     width: 30px;
@@ -515,7 +517,7 @@ body {
     border: 3px solid #eab308;
   }
   .box div:nth-child(1) {
-    top: 20%;
+    top: 15%;
     left: 38%;
     animation: animate 10s linear infinite;
   }
@@ -525,12 +527,12 @@ body {
     animation: animate 7s linear infinite;
   }
   .box div:nth-child(3) {
-    top: 25%;
+    top: 20%;
     left: 6%;
     animation: animate 9s linear infinite;
   }
   .box div:nth-child(4) {
-    top: 30%;
+    top: 25%;
     left: 58%;
     animation: animate 10s linear infinite;
   }
@@ -540,22 +542,22 @@ body {
     animation: animate 6s linear infinite;
   }
   .box div:nth-child(6) {
-    top: 88%;
+    top: 89%;
     left: 80%;
     animation: animate 12s linear infinite;
   }
   .box div:nth-child(7) {
-    top: 22%;
+    top: 17%;
     left: 84%;
     animation: animate 12s linear infinite;
   }
   .box div:nth-child(8) {
-    top: 85%;
+    top: 86%;
     left: 30%;
     animation: animate 12s linear infinite;
   }
   .secondSection{
-    padding:40px;
+    padding:20px;
   }
   .intro {
     width: 80%;
@@ -636,17 +638,357 @@ body {
     margin: 0 auto;
   }
 }
+@media (min-width: 768px) and (max-width: 896px) {
+  .firstSection{
+    margin:50px 0;
+  }
+  .leftSection {
+    margin:150px 0;
+    margin-left: 20px;
+    font-size: 2rem;
+  }
+  .content{
+    font-size:1.7rem;
+  }
+  .rightSection {
+    margin-top: 50px;
+    margin-right:50px;
+  }
+  .rightSection img {
+    margin-top: 250px;
+  }
+  .box div {
+    width: 30px;
+    height: 30px;
+    border: 3px solid #eab308;
+  }
+  .box div:nth-child(1) {
+    top: 15%;
+    left: 38%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(2) {
+    top: 84%;
+    left: 55%;
+    animation: animate 7s linear infinite;
+  }
+  .box div:nth-child(3) {
+    top: 20%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+  }
+  .box div:nth-child(4) {
+    top: 25%;
+    left: 58%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(5) {
+    top: 85%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+  }
+  .box div:nth-child(6) {
+    top: 89%;
+    left: 80%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(7) {
+    top: 17%;
+    left: 84%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(8) {
+    top: 86%;
+    left: 30%;
+    animation: animate 12s linear infinite;
+  }
+  .secondSection{
+    padding:20px;
+  }
+  .intro {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .thirdSection{
+    padding:30px;
+  }
+  .left-container img{
+    right:-50px;
+  }
+  .right-container {
+    left: 52%;
+  }
+  .right-container img {
+    left: -50px;
+  }
+  .container img {
+    width: 50px;
+    height: 50px;
+  }
+  .left-container, .right-container {
+    padding: 10px 30px;
+  }
+  .container{
+    padding:10px;
+    padding: 10px 30px;
+  }
+  .experience_list{
+    width:90%;
+    padding: 20px 20px;
+  }
+  .left-container-arrow {
+     border-left: 10px solid #191d28;
+     right:-10px;
+  }
+  .right-container-arrow {
+    border-right: 10px solid #191d28;
+    left:-10px;
+  }
+  .left-container img {
+  right: -45px;
+  }
+  .right-container img {
+  left: -35px;
+  }
+  .project{
+    padding:50px;
+  }
+  .interest div {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 5px;
+    flex-wrap: wrap; 
+    width:50px;
+    height:250px;
+    padding: 30px;
+  }
+  .interest div h2 {
+    font-size: 1rem;
+  }
+  .interest div i {
+    font-size: 5rem;
+  }
+  .projects_all div {
+    display: grid;
+    width: 50%;
+    height: auto;
+    padding: 30px;
+    margin: 10px 0;
+    margin-bottom: 0;
+  }
+  .contact {
+    width: 60%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 897px) and (max-width: 1022px) {
+  .firstSection{
+    margin:90px 0;
+  }
+  .leftSection {
+    margin:150px 0;
+    margin-left: 20px;
+    font-size: 2rem;
+  }
+  .content{
+    font-size:1.7rem;
+  }
+  .rightSection {
+    margin-top: 50px;
+    margin-right:50px;
+  }
+  .rightSection img {
+    margin-top: 250px;
+  }
+  .box div {
+    width: 30px;
+    height: 30px;
+    border: 3px solid #eab308;
+  }
+  .box div:nth-child(1) {
+    top: 15%;
+    left: 38%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(2) {
+    top: 84%;
+    left: 55%;
+    animation: animate 7s linear infinite;
+  }
+  .box div:nth-child(3) {
+    top: 20%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+  }
+  .box div:nth-child(4) {
+    top: 25%;
+    left: 58%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(5) {
+    top: 85%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+  }
+  .box div:nth-child(6) {
+    top: 89%;
+    left: 80%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(7) {
+    top: 17%;
+    left: 84%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(8) {
+    top: 86%;
+    left: 30%;
+    animation: animate 12s linear infinite;
+  }
+  .secondSection{
+    padding:20px;
+  }
+  .intro {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .thirdSection{
+    padding:30px;
+  }
+  .left-container img{
+    right:-50px;
+  }
+  .right-container {
+    left: 52%;
+  }
+  .right-container img {
+    left: -50px;
+  }
+  .container img {
+    width: 50px;
+    height: 50px;
+  }
+  .left-container, .right-container {
+    padding: 10px 30px;
+  }
+  .container{
+    padding:10px;
+    padding: 10px 30px;
+  }
+  .experience_list{
+    width:90%;
+    padding: 20px 20px;
+  }
+  .left-container-arrow {
+     border-left: 10px solid #191d28;
+     right:-10px;
+  }
+  .right-container-arrow {
+    border-right: 10px solid #191d28;
+    left:-10px;
+  }
+  .left-container img {
+  right: -45px;
+  }
+  .right-container img {
+  left: -35px;
+  }
+  .project{
+    padding:50px;
+  }
+  .interest div {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 5px;
+    flex-wrap: wrap; 
+    width:50px;
+    height:250px;
+    padding: 30px;
+  }
+  .interest div h2 {
+    font-size: 1rem;
+  }
+  .interest div i {
+    font-size: 5rem;
+  }
+  .projects_all div {
+    display: grid;
+    width: 50%;
+    height: auto;
+    padding: 30px;
+    margin: 10px 0;
+    margin-bottom: 0;
+  }
+  .contact {
+    width: 60%;
+    padding: 20px;
+    margin: 0 auto;
+  }
 
-@media (min-width: 1025px) and (max-width: 1100px) {
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
   .rightSection img{
     margin-top:130px;
+  }
+  .box div {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 6px solid #eab308;
+  }
+  .box div:nth-child(1) {
+    top: 16%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(2) {
+    top: 88%;
+    left: 60%;
+    animation: animate 7s linear infinite;
+  }
+  .box div:nth-child(3) {
+    top: 25%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+  }
+  .box div:nth-child(4) {
+    top: 30%;
+    left: 58%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(5) {
+    top: 85%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+  }
+  .box div:nth-child(6) {
+    top: 88%;
+    left: 90%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(7) {
+    top: 16%;
+    left: 90%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(8) {
+    top: 84%;
+    left: 30%;
+    animation: animate 12s linear infinite;
   }
   .project h1{
     margin-bottom: 30px;
   }
+
   .projects_all div {
     width: 200px;
-    height: 700px;
+    height: 720px;
   }
   .projects_all a{
     margin-left:150px;
@@ -663,57 +1005,468 @@ body {
   left:-35px;
  }
 }
-
-@media (min-width: 1101px) and (max-width: 1142px) {
+@media (min-width: 1101px){
   .rightSection img{
     margin-top:130px;
+  }
+  .box div {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 6px solid #eab308;
+  }
+  .box div:nth-child(1) {
+    top: 16%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(2) {
+    top: 88%;
+    left: 60%;
+    animation: animate 7s linear infinite;
+  }
+  .box div:nth-child(3) {
+    top: 25%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+  }
+  .box div:nth-child(4) {
+    top: 30%;
+    left: 58%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(5) {
+    top: 85%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+  }
+  .box div:nth-child(6) {
+    top: 88%;
+    left: 90%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(7) {
+    top: 16%;
+    left: 90%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(8) {
+    top: 84%;
+    left: 30%;
+    animation: animate 12s linear infinite;
   }
   .project h1{
     margin-bottom: 30px;
   }
   .projects_all div {
     width: 200px;
-    height: 650px;
+    height: 700px;
   }
   .projects_all a{
     margin-left:150px;
-  }
-  .projects_all p{
-    margin-bottom: 40px;
+   }
+  .event p{
+    margin-bottom: 85px;
   }
   .event h4{
+    margin-bottom: 50px;
+  }
+  .vehicle h4{
+    margin-bottom: 35px;
+  } 
+ .left-container{
+  left:-35px;
+ }
+}
+@media (min-width: 1102px) and (max-width: 1108px) {
+  .rightSection img{
+    margin-top:130px;
+  }
+  .box div {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 6px solid #eab308;
+  }
+  .box div:nth-child(1) {
+    top: 16%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(2) {
+    top: 88%;
+    left: 60%;
+    animation: animate 7s linear infinite;
+  }
+  .box div:nth-child(3) {
+    top: 25%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+  }
+  .box div:nth-child(4) {
+    top: 30%;
+    left: 58%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(5) {
+    top: 85%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+  }
+  .box div:nth-child(6) {
+    top: 88%;
+    left: 90%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(7) {
+    top: 16%;
+    left: 90%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(8) {
+    top: 84%;
+    left: 30%;
+    animation: animate 12s linear infinite;
+  }
+  .project h1{
+    margin-bottom: 30px;
+  }
+  .projects_all div {
+    width: 200px;
+    height: 700px;
+  }
+  .projects_all a{
+    margin-left:150px;
+   }
+  .event p{
+    margin-bottom: 85px;
+  }
+  .event h4{
+    margin-bottom: 50px;
+  }
+  .vehicle h4{
+    margin-top: 60px;
+    margin-bottom: 30px;
+  } 
+ .left-container{
+  left:-35px;
+ }
+}
+@media (min-width: 1109px) and (max-width: 1125px) {
+  .rightSection img{
+    margin-top:130px;
+  }
+  .box div {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 6px solid #eab308;
+  }
+  .box div:nth-child(1) {
+    top: 16%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(2) {
+    top: 88%;
+    left: 60%;
+    animation: animate 7s linear infinite;
+  }
+  .box div:nth-child(3) {
+    top: 25%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+  }
+  .box div:nth-child(4) {
+    top: 30%;
+    left: 58%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(5) {
+    top: 85%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+  }
+  .box div:nth-child(6) {
+    top: 88%;
+    left: 90%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(7) {
+    top: 16%;
+    left: 90%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(8) {
+    top: 84%;
+    left: 30%;
+    animation: animate 12s linear infinite;
+  }
+  .project h1{
+    margin-bottom: 30px;
+  }
+  .projects_all div {
+    width: 200px;
+    height: 700px;
+  }
+  .projects_all a{
+    margin-left:150px;
+   }
+   .projects_all div h2{
+    margin-bottom: 40px;
+   }
+  .event p{
+    margin-bottom: 85px;
+  }
+  .event h4{
+    margin-top: 120px;
+    margin-bottom: 50px;
+  }
+  .vehicle h4{
+    margin-top: 60px;
+    margin-bottom: 30px;
+  } 
+ .left-container{
+  left:-35px;
+ }
+}
+@media (min-width: 1126px) and (max-width: 1142px) {
+  .rightSection img{
+    margin-top:130px;
+  }
+  .box div {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 6px solid #eab308;
+  }
+  .box div:nth-child(1) {
+    top: 16%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(2) {
+    top: 82%;
+    left: 60%;
+    animation: animate 7s linear infinite;
+  }
+  .box div:nth-child(3) {
+    top: 25%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+  }
+  .box div:nth-child(4) {
+    top: 30%;
+    left: 58%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(5) {
+    top: 79%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+  }
+  .box div:nth-child(6) {
+    top: 81%;
+    left: 90%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(7) {
+    top: 16%;
+    left: 90%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(8) {
+    top: 82%;
+    left: 30%;
+    animation: animate 12s linear infinite;
+  }
+  .project h1{
+    margin-bottom: 30px;
+  }
+  .projects_all div {
+    width: 200px;
+    height: 700px;
+  }
+  .projects_all a{
+    margin-left:150px;
+   }
+   .projects_all div h2{
+    margin-bottom: 40px;
+   }
+  .event p{
+    margin-bottom: 85px;
+  }
+  .event h4{
+    margin-top: 120px;
     margin-bottom: 30px;
   }
   .vehicle h4{
+    margin-top: 60px;
     margin-bottom: 30px;
-  }
+  } 
  .left-container{
   left:-35px;
  }
 }
 
-@media (min-width: 1143px) and (max-width: 1188px) {
+@media (min-width: 1143px) and (max-width: 1157px) {
   .rightSection img{
     margin-top:130px;
+  }
+  .box div {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 6px solid #eab308;
+  }
+  .box div:nth-child(1) {
+    top: 16%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(2) {
+    top: 88%;
+    left: 60%;
+    animation: animate 7s linear infinite;
+  }
+  .box div:nth-child(3) {
+    top: 25%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+  }
+  .box div:nth-child(4) {
+    top: 30%;
+    left: 58%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(5) {
+    top: 85%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+  }
+  .box div:nth-child(6) {
+    top: 88%;
+    left: 90%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(7) {
+    top: 16%;
+    left: 90%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(8) {
+    top: 84%;
+    left: 30%;
+    animation: animate 12s linear infinite;
   }
   .project h1{
     margin-bottom: 30px;
   }
   .projects_all div {
     width: 200px;
-    height: 650px;
+    height: 700px;
   }
   .projects_all a{
     margin-left:150px;
+   }
+   .projects_all div h2{
+    margin-bottom: 40px;
+   }
+  .event p{
+    margin-bottom: 85px;
   }
   .event h4{
-    margin-top:110px;
+    margin-top: 140px;
     margin-bottom: 30px;
   }
   .vehicle h4{
-    margin-top:30px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  } 
+ .left-container{
+  left:-35px;
+ }
+}
+@media (min-width: 1158px) and (max-width: 1188px) {
+  .rightSection img{
+    margin-top:130px;
+  }
+  .box div {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 6px solid #eab308;
+  }
+  .box div:nth-child(1) {
+    top: 16%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(2) {
+    top: 88%;
+    left: 60%;
+    animation: animate 7s linear infinite;
+  }
+  .box div:nth-child(3) {
+    top: 25%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+  }
+  .box div:nth-child(4) {
+    top: 30%;
+    left: 58%;
+    animation: animate 10s linear infinite;
+  }
+  .box div:nth-child(5) {
+    top: 85%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+  }
+  .box div:nth-child(6) {
+    top: 88%;
+    left: 90%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(7) {
+    top: 16%;
+    left: 90%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(8) {
+    top: 84%;
+    left: 30%;
+    animation: animate 12s linear infinite;
+  }
+  .project h1{
     margin-bottom: 30px;
   }
+  .projects_all div {
+    width: 200px;
+    height: 700px;
+  }
+  .projects_all a{
+    margin-left:150px;
+   }
+   .projects_all div h2{
+    margin-bottom: 40px;
+   }
+  .event p{
+    margin-bottom: 85px;
+  }
+  .event h4{
+    margin-top: 140px;
+    margin-bottom: 30px;
+  }
+  .vehicle h4{
+    margin-top: 98px;
+    margin-bottom: 30px;
+  } 
  .left-container{
   left:-35px;
  }
@@ -723,52 +1476,230 @@ body {
     margin-bottom: 30px;
   }
   .projects_all div {
-    width: 45%;
+    width: 200px;
+    height: 650px;
+  }
+  .projects_all a{
+    margin-left:150px;
+   }
+   .projects_all div h2{
+    margin-bottom: 40px;
+   }
+  .event p{
+    margin-bottom: 85px;
+  }
+  .event h4{
+    margin-top: 120px;
+    margin-bottom: 30px;
+  }
+  .vehicle h4{
+    margin-top: 98px;
+    margin-bottom: 30px;
+  } 
+ .left-container{
+  left:-35px;
+ }
+}
+@media (min-width: 1301px) and (max-width: 1406px) {
+  .project h1{
+    margin-bottom: 30px;
+  }
+  .projects_all div {
+    width: 200px;
     height: 600px;
   }
   .projects_all a{
     margin-left:190px;
-  }
-  .projects_all h4{
-   margin-bottom: 30px;
-  }
-  .left-container{
-  left:-35px;
-  }
-}
-
-@media (min-width: 1301px) and (max-width: 1390px) {
-  .projects_all div {
-    width: 30%;
-    height: 550px;
-  }
-  .project h1{
-    margin-bottom: 20px;
+   }
+   .projects_all div h2{
+    margin-bottom: 40px;
+   }
+  .event p{
+    margin-bottom: 85px;
   }
   .event h4{
-    margin-top: 20px;
+    margin-top: 80px;
+    margin-bottom: 30px;
   }
   .vehicle h4{
-    margin-top: 20px;
-  }
-  .projects_all a{
-  display: flex;
-  width: 50px;
-  margin-left:260px;
-  }
-  .event a{
-  margin-top: 30px;
-  }
-  .vehicle a{
-  margin-top:10px;
-  }
+    margin-top: 60px;
+    margin-bottom: 30px;
+  } 
  .left-container{
-  left:-5px;
+  left:-35px;
  }
 }
-
-@media (min-width: 1500px) and (max-width: 1530px) {
+@media (min-width: 1407px) and (max-width: 1431px) {
+  .project h1{
+    margin-bottom: 30px;
+  }
+  .projects_all div {
+    width: 200px;
+    height: 600px;
+  }
+  .projects_all a{
+    margin-left:190px;
+   }
+   .projects_all div h2{
+    margin-bottom: 40px;
+   }
+  .event p{
+    margin-bottom: 85px;
+  }
+  .event h4{
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .vehicle h4{
+    margin-top: 85px;
+    margin-bottom: 30px;
+  } 
  .left-container{
-  left:10px;
+  left:-35px;
  }
+}
+@media (min-width: 1432px) and (max-width: 1498px) {
+  .project h1{
+    margin-bottom: 30px;
+  }
+  .projects_all div {
+    width: 200px;
+    height: 600px;
+  }
+  .projects_all a{
+    margin-left:190px;
+   }
+   .projects_all div h2{
+    margin-bottom: 40px;
+   }
+  .event p{
+    margin-bottom: 85px;
+  }
+  .event h4{
+    margin-top: 105px;
+    margin-bottom: 30px;
+  }
+  .vehicle h4{
+    margin-top: 85px;
+    margin-bottom: 30px;
+  } 
+ .left-container{
+  left:-35px;
+ }
+}
+@media (min-width: 1499px) and (max-width: 1689px) {
+  .project h1{
+    margin-bottom: 30px;
+  }
+  .projects_all div {
+    width: 200px;
+    height: 600px;
+  }
+  .projects_all a{
+    margin-left:200px;
+   }
+   .projects_all div h2{
+    margin-bottom: 40px;
+   }
+  .event p{
+    margin-bottom: 85px;
+  }
+  .event h4{
+    margin-top: 105px;
+    margin-bottom: 30px;
+  }
+  .vehicle h4{
+    margin-top: 85px;
+    margin-bottom: 30px;
+  } 
+  .left-container{
+    left:10px;
+   }
+}  
+@media (min-width: 1690px) and (max-width: 1760px) {
+  .project h1{
+    margin-bottom: 30px;
+  }
+  .projects_all div {
+    width: 200px;
+    height: 550px;
+  }
+  .projects_all a{
+    margin-left:190px;
+   }
+   .projects_all div h2{
+    margin-bottom: 40px;
+   }
+  .event p{
+    margin-bottom: 85px;
+  }
+  .event h4{
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .vehicle h4{
+    margin-top: 85px;
+    margin-bottom: 30px;
+  } 
+  .left-container{
+    left:10px;
+  }
+}
+@media (min-width: 1761px) and (max-width: 1767px) {
+  .project h1{
+    margin-bottom: 30px;
+  }
+  .projects_all div {
+    width: 200px;
+    height: 550px;
+  }
+  .projects_all a{
+    margin-left:190px;
+   }
+   .projects_all div h2{
+    margin-bottom: 40px;
+   }
+  .event p{
+    margin-bottom: 85px;
+  }
+  .event h4{
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .vehicle h4{
+    margin-top: 70px;
+    margin-bottom: 30px;
+  } 
+  .left-container{
+    left:30px;
+  }
+}
+@media (min-width: 1768px) and (max-width: 1800px) {
+  .project h1{
+    margin-bottom: 30px;
+  }
+  .projects_all div {
+    width: 200px;
+    height: 550px;
+  }
+  .projects_all a{
+    margin-left:190px;
+   }
+   .projects_all div h2{
+    margin-bottom: 40px;
+   }
+  .event p{
+    margin-bottom: 85px;
+  }
+  .event h4{
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .vehicle h4{
+    margin-top: 100px;
+    margin-bottom: 30px;
+  } 
+  .left-container{
+    left:30px;
+  }
 }
