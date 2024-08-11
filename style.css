@@ -1155,15 +1155,18 @@ body {
  }
 }
 @media (min-width: 1109px) and (max-width: 1125px) {
+  .leftSection{
+    margin-top: 50px;
+  }
   .rightSection img{
-    margin-top:130px;
+    margin-top:30px;
   }
   .box div {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 10px;
+    height: 10px;
     background-color: transparent;
-    border: 6px solid #eab308;
+    border: 2px solid #eab308;
   }
   .box div:nth-child(1) {
     top: 16%;
@@ -1171,7 +1174,7 @@ body {
     animation: animate 10s linear infinite;
   }
   .box div:nth-child(2) {
-    top: 88%;
+    top: 62%;
     left: 60%;
     animation: animate 7s linear infinite;
   }
@@ -1186,12 +1189,12 @@ body {
     animation: animate 10s linear infinite;
   }
   .box div:nth-child(5) {
-    top: 85%;
+    top: 69%;
     left: 10%;
     animation: animate 6s linear infinite;
   }
   .box div:nth-child(6) {
-    top: 88%;
+    top: 65%;
     left: 90%;
     animation: animate 12s linear infinite;
   }
@@ -1201,7 +1204,7 @@ body {
     animation: animate 12s linear infinite;
   }
   .box div:nth-child(8) {
-    top: 84%;
+    top: 66%;
     left: 30%;
     animation: animate 12s linear infinite;
   }
@@ -1232,6 +1235,12 @@ body {
  .left-container{
   left:-35px;
  }
+ .contact {
+  width: 60%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
 }
 @media (min-width: 1126px) and (max-width: 1142px) {
   .rightSection img{
