@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mahi- Software Developer Portfolio</title>
+    <title>Mahi Attri- Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
           width: 30%;
         }
         .leftSection {
-          margin: 200px 0;
+          margin: 140px 0;
           margin-left: 80px;
           font-size: 3rem;
           position: relative;
@@ -35,13 +35,13 @@
         }
         .rightSection img {
           margin-right: 100px;
-          width: 100%;
+          width: 85%;
           border-radius: 50%;
         }
         .rightSection {
           position: relative;
           z-index: 3;
-          margin-top: -20px;
+          margin-top: -55px;
         }
         .yellow {
           color: #eab308;
@@ -86,7 +86,7 @@
           border: 6px solid #eab308;
         }
         .box div:nth-child(1) {
-          top: 16%;
+          top: 40%;
           left: 42%;
           animation: animate 10s linear infinite;
         }
@@ -116,7 +116,7 @@
           animation: animate 12s linear infinite;
         }
         .box div:nth-child(7) {
-          top: 16%;
+          top: 50%;
           left: 90%;
           animation: animate 12s linear infinite;
         }
@@ -295,6 +295,23 @@
             color: #d1d5db;
             margin-bottom: 12px;
         }
+        .experience_list a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            color: #eab308;
+            background-color: #020617;
+            border: 1px solid #eab308;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .experience_list a:hover {
+            background-color: #eab308;
+            color: #020617;
+            transform: translateY(-1px);
+        }
         .left-container-arrow {
             height: 0;
             width: 0;
@@ -383,7 +400,7 @@
         }
         /* Contact Section Styling */
         .contact {
-            padding: 50px;
+            padding: 90px;
             margin: 0 auto;
             width: 90%;
             max-width: 800px;
@@ -400,7 +417,7 @@
             font-size: 1.1rem;
         }
         .fifthSection {
-            padding: 60px 20px;
+            padding: 130px 20px;
         }
         .fifthSection form {
             display: flex;
@@ -508,6 +525,12 @@
         .contact-method i {
             font-size: 1.5rem;
             color: #eab308;
+        }
+        html {
+        scroll-behavior: smooth;
+        }
+        body {
+        padding-top: 65px; /* offset for sticky navbar */
         }
 
         /* RESPONSIVE DESIGN */
@@ -863,6 +886,19 @@
     </style>
 </head>
 <body>
+     <!-- Sticky Navbar -->
+    <nav style="position: fixed; top: 0; width: 100%; background: #0b1120; padding: 20px 60px; display: flex; justify-content: center; gap: 50px; z-index: 1000; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); font-family: 'Poppins', sans-serif;">
+    <a href="#home" style="color: white; text-decoration: none; font-weight: 600; font-size: 1.05rem;">Home</a>
+    <a href="#introduction" style="color: white; text-decoration: none; font-weight: 600; font-size: 1.05rem;">Introduction</a>
+    <a href="#experience" style="color: white; text-decoration: none; font-weight: 600; font-size: 1.05rem;">Work Experience</a>
+    <a href="#projects" style="color: white; text-decoration: none; font-weight: 600; font-size: 1.05rem;">Projects</a>
+    <a href="#testimonials" style="color: white; text-decoration: none; font-weight: 600; font-size: 1.05rem;">Testimonials</a>
+    <a href="#hackathons" style="color: white; text-decoration: none; font-weight: 600; font-size: 1.05rem;">Hackathons</a>
+    <a href="#certifications" style="color: white; text-decoration: none; font-weight: 600; font-size: 1.05rem;">Certifications</a>
+    <a href="#contact" style="color: white; text-decoration: none; font-weight: 600; font-size: 1.05rem;">Contact</a>
+    </nav>
+
+
     <main>
         <div class="wrapper">
             <div class="box">
@@ -875,7 +911,7 @@
                 <div></div>
                 <div></div>
             </div>
-            <section class="firstSection">
+            <section id="home" class="firstSection">
                 <div class="leftSection">
                     Hi, I'm <span class="yellow typed"></span>
                     <div class="content">
@@ -895,7 +931,7 @@
                 </div>
         </div>
         </section>
-        <div class="secondSection">
+        <div id="introduction" class="secondSection" style="padding: 40px 20px;">
             <div class="intro">
                 <h1>Introduction</h1>
                 <p>Hi, I'm Mahi Attri, a third-year student pursuing a B.Tech in Computer Science and Engineering with a
@@ -904,7 +940,7 @@
                 <p>I am passionate about creating intuitive and dynamic web applications, and I enjoy working on both
                     the visual and functional aspects of software. My academic and project experiences have equipped me
                     with a solid foundation in programming, problem-solving, and innovative technology solutions.</p>
-                <p>My academic and professional experiences encompass a wide range of skills, from programming in Python
+                <p>My academic and professional experiences encompass a wide range of skills, from programming in Python, C/C++ 
                     and Java to developing complex machine learning models and full-stack web applications. I am
                     passionate about leveraging technology to create innovative solutions and have successfully
                     contributed to various projects and internships, honing my abilities in both research and practical
@@ -912,7 +948,7 @@
                 <p>I also have a passion for writing and find joy in sharing my insights and experiences through
                     engaging blogs, detailed research papers, and thought-provoking social media content.</p>
 
-                <a href="https://drive.google.com/file/d/1A4Zq2Yb_QlZSBL_2EFRkyOSWENZwt7tt/view?usp=sharing">View
+                <a href="https://drive.google.com/file/d/1lY_PK0tPSm4cwaQuSca8yKOmd8-cTcTF/view?usp=sharing">View
                     Resume</a>
                 <div class="container1">
                     <div class="interest">
@@ -933,12 +969,13 @@
                 </div>
             </div>
         </div>
-        <div class="thirdSection">
+        <div id="experience" class="thirdSection">
             <div class="exp_title">
                 <h1>Work Experience</h1>
                 <p>My Journey So Far</p>
             </div>
             <div class="exp_all">
+
                 <div class="container left-container">
                     <img src="ibm.jpg" alt="IBM Logo">
                     <div class="experience_list">
@@ -959,6 +996,10 @@
                         <small>January 2025 – April 2025</small>
                         <p>• Built an AI-powered Skin Assistant using the ConvNeXt deep learning model, achieving 92.30% accuracy in personalized skincare recommendations and early skin issue detection.</p>
                         <p>• Explored RAG with a vector database and curated dermatology datasets to improve response quality.</p>
+                        <a href="https://drive.google.com/file/d/188hTCTDOPGRkYdq0JLNCEeEdpRoR7eJy/view?usp=sharing" target="_blank">Certificate</a>
+                        <a href="https://drive.google.com/file/d/1sAjlx24Gw8qLj5EkBdZTmvhvrauJSRef/view?usp=sharing" target="_blank">Appreciation Letter</a>
+                        <a href="https://drive.google.com/file/d/1KniB7w5ffzUtJ_KxGTesw3g8WKey055f/view?usp=sharing" target="_blank">Letter of Recommendation</a>
+                        
                         <span class="right-container-arrow"></span>
                     </div>
                 </div>
@@ -971,43 +1012,56 @@
                         <small>February 2025 – March 2025</small>
                         <p>• Pioneered an AI-driven Aadhar Identity Validation System, addressing real-world verification challenges.</p>
                         <p>• Applied AI/ML methodologies for data processing and model deployment, achieving 85% verification accuracy.</p>
+                        <p>• Best performer of the internship and received an extended internship offer.</p>
+                        <a href="https://drive.google.com/file/d/1QzYx8Ch5WHeP3pU06rXoNpQ3MMUsqmeW/view?usp=sharing" target="_blank">Certificate</a>
                         <span class="left-container-arrow"></span>
                     </div>
                 </div>
 
                 <div class="container right-container">
-                    <img src="bharat_intern_logo.jpg" alt="Bharat Intern Logo">
+                    <img src="virasat_logo.jpg" alt="Virasat Logo">
                     <div class="experience_list">
-                        <h2>Machine Learning Intern</h2>
-                        <h4>Bharat Intern</h4>
-                        <small>July 2024 - August 2024</small>
-                        <p>• Created predictive models for House Price Prediction, Movie Recommendations, and Iris Classification using Linear 
-                            Regression, Neural Networks, and collaborative filtering with Python, scikit-learn, and TensorFlow.</p>
-                        <p>• Performed data cleaning, standard scaling, one-hot encoding, and model evaluation with metrics like MSE and R²</p>
-                        <p>• Created Tkinter interfaces for predictions and utilized joblib and TensorFlow for model serialization.</p>
+                        <h2>Organizing Committee Member</h2>
+                        <h4>REACH Virasat – Powered by ONGC</h4>
+                        <small>17 October 2024 – 25 October 2024</small>
+                        <p>• Actively contributed to the organization and execution of Virasat 2024, India’s largest heritage and arts festival, presented in association with UPES.</p>
+                        <p>• Collaborated with a team to manage and coordinate front-stage activities, ensuring seamless performances by renowned artists like Malini Awasthi and Pt. Sajan Mishra.</p>
+                        <p>• Played a key role in enhancing audience engagement during captivating folk performances, including Goa’s Cultural Fusion and Uttarakhand’s Cholia.</p>
+                        <p>• Ensured smooth on-stage transitions and supported artists throughout the event.</p>
+                        <a href="https://drive.google.com/file/d/1RBSsnTWjxUZIOYwAVjN-BBX-GLSyVJIs/view?usp=sharing" target="_blank">Certificate</a>
                         <span class="right-container-arrow"></span>
                     </div>
                 </div>
 
                 <div class="container left-container">
-                    <img src="codsoft_logo.jpg" alt="CodSoft Logo">
+                    <img src="bharat_intern_logo.jpg" alt="Bharat Intern Logo">
                     <div class="experience_list">
                         <h2>Machine Learning Intern</h2>
-                        <h4>CodSoft</h4>
-                        <small>June 2024 - July 2024</small>
-                        <p>• Developed machine learning models for Movie Genre Classification, Credit Card Fraud Detection,
-                            Customer Churn Prediction, Spam SMS Detection, and Handwritten Text Generation during a virtual
-                            internship.</p>
-                        <p>• Applied advanced techniques including TF-IDF, word embeddings, and diverse classifiers such as
-                            Naive Bayes, Logistic Regression, Decision Trees, Random Forests, and Gradient Boosting to
-                            address complex data challenges.</p>
-                        <p>• Gained practical experience in data preprocessing, model training, and evaluation, contributing
-                            to solutions for real-world applications in machine learning and artificial intelligence.</p>
+                        <h4>Bharat Intern</h4>
+                        <small>July 2024 - August 2024</small>
+                        <p>• Created predictive models for House Price Prediction, Movie Recommendations, and Iris Classification using Linear Regression, Neural Networks, and collaborative filtering with Python, scikit-learn, and TensorFlow.</p>
+                        <p>• Performed data cleaning, standard scaling, one-hot encoding, and model evaluation with metrics like MSE and R²</p>
+                        <p>• Created Tkinter interfaces for predictions and utilized joblib and TensorFlow for model serialization.</p>
+                        <a href="https://drive.google.com/file/d/1qcbLyKAIGFsuj1sBCg67b6-KOHFyNQTb/view?usp=sharing" target="_blank">Certificate</a>
                         <span class="left-container-arrow"></span>
                     </div>
                 </div>
 
                 <div class="container right-container">
+                    <img src="codsoft_logo.jpg" alt="CodSoft Logo">
+                    <div class="experience_list">
+                        <h2>Machine Learning Intern</h2>
+                        <h4>CodSoft</h4>
+                        <small>June 2024 - July 2024</small>
+                        <p>• Developed machine learning models for Movie Genre Classification, Credit Card Fraud Detection, Customer Churn Prediction, Spam SMS Detection, and Handwritten Text Generation during a virtual internship.</p>
+                        <p>• Applied advanced techniques including TF-IDF, word embeddings, and diverse classifiers such as Naive Bayes, Logistic Regression, Decision Trees, Random Forests, and Gradient Boosting to address complex data challenges.</p>
+                        <p>• Gained practical experience in data preprocessing, model training, and evaluation, contributing to solutions for real-world applications in machine learning and artificial intelligence.</p>
+                        <a href="https://drive.google.com/file/d/1kpQ5VSG-oPzQRdwPnyMIVxa5bx5gx5Ce/view?usp=sharing" target="_blank">Certificate</a>
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+
+                <div class="container left-container">
                     <img src="nss_upes.png" alt="NSS UPES Logo">
                     <div class="experience_list">
                         <h2>Editorial Team Core Member</h2>
@@ -1015,11 +1069,11 @@
                         <small>December 2023 - January 2025</small>
                         <p>• Crafted compelling content for NSS UPES publications and social media, including posts for Martyrs Day and blood donation camps, enhancing event visibility and engagement.</p>
                         <p>• Collaborated on strategic content planning and supported event initiatives, contributing to effective communication and successful camp operations.</p>
-                        <span class="right-container-arrow"></span>
+                        <span class="left-container-arrow"></span>
                     </div>
                 </div>
 
-                <div class="container left-container">
+                <div class="container right-container">
                     <img src="acm_upes.jpg" alt="ACM UPES Logo">
                     <div class="experience_list">
                         <h2>Editorial Team Core Member</h2>
@@ -1027,11 +1081,12 @@
                         <small>July 2023 - January 2025</small>
                         <p>• Led Prodigy 24's success and actively contributed to strengthening the community within UPES ACM and ACM-W Student Chapters through dedicated involvement.</p>
                         <p>• Created impactful Instagram captions for ACM UPES, boosting engagement and visibility across social media platforms.</p>
-                        <span class="left-container-arrow"></span>
+                        <a href="https://drive.google.com/file/d/1Ii6bp4mmbtLtY-Ft006M4QYcd-EO72Il/view?usp=sharing" target="_blank">Certificate</a>
+                        <span class="right-container-arrow"></span>
                     </div>
                 </div>
 
-                <div class="container right-container">
+                <div class="container left-container">
                     <img src="upes.jpg" alt="UPES Logo">
                     <div class="experience_list">
                         <h2>Research Intern</h2>
@@ -1040,34 +1095,29 @@
                         <p>• Authored a comprehensive research paper titled "Tiger Poaching in The Sundarbans".</p>
                         <p>• Delved into diverse facets of Computer Science, honing skills in research paper composition.</p>
                         <p>• Executed meticulous data collection and generated graphical representation to bolster research findings.</p>
-                        <span class="right-container-arrow"></span>
+                        <a href="https://drive.google.com/file/d/1M71EJTu3OBUF01jJV5hfOF9IgS_Xki8k/view?usp=sharing" target="_blank">Certificate</a>
+                        <span class="left-container-arrow"></span>
                     </div>
                 </div>
-                
-                <div class="container left-container">
+
+                <div class="container right-container">
                     <img src="idf.jpg" alt="Indian Development Foundation Logo">
                     <div class="experience_list">
                         <h2>Social Intern</h2>
                         <h4>Indian Development Foundation</h4>
                         <small>June 2023 - July 2023</small>
-                        <p>• In-depth Research and Exemplary Execution: Conducted insightful research and submitted
-                            comprehensive reports, showcasing strong analytical skills and attention to detail. Successfully
-                            carried out various tasks with enthusiasm and precision, consistently meeting and exceeding
-                            expectations.</p>
-                        <p>• Effective Communication and UNSDG Proficiency: Interacted seamlessly with students during
-                            school visits, demonstrating exceptional communication abilities. Exhibited a thorough
-                            understanding of the United Nations Sustainable Development Goals, aligning efforts with global
-                            standards.</p>
-                        <p>• Empathetic Engagement and Proactive Creativity: Displayed exemplary care and compassion while
-                            working with underprivileged communities, ensuring impactful interactions. Leveraged a creative
-                            mindset to develop innovative solutions, contributing proactively to the organization's
-                            objectives.</p>
-                        <span class="left-container-arrow"></span>
+                        <p>• Conducted insightful research and submitted comprehensive reports, showcasing strong analytical skills and attention to detail.</p>
+                        <p>• Demonstrated exceptional communication skills and aligned efforts with United Nations Sustainable Development Goals during school visits and interactions.</p>
+                        <p>• Worked empathetically with underprivileged communities and contributed innovative solutions for impact.</p>
+                        <a href="https://drive.google.com/file/d/1VxmRSMPsvgqxXCnGPbinR4ZgAjh06f8d/view?usp=sharing" target="_blank">Certificate</a>
+                        <span class="right-container-arrow"></span>
                     </div>
                 </div>
+
             </div>
         </div>
-        <div class="fourthSection">
+
+        <div id="projects" class="fourthSection" style="padding: 20px 20px;">
             <div class="project">
                 <h1>Projects</h1>
                 <div class="project_container">
@@ -1106,8 +1156,87 @@
                 </div>
             </div>
         </div>  
+        <div class="testimonialSection" style="background: linear-gradient(90deg, #020617, #111827); padding: 60px 20px;">
+            <div id="testimonials"  class="project" style="padding: 60px 20px; text-align: center;">
+                <h1>Testimonials</h1>
+                <div class="projects_all" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px;">
+                    <div style="background-color: #191d28; padding: 30px; border-radius: 20px; box-shadow: 0 0 20px #eab308; max-width: 480px; flex: 1 1 450px;">
+                        <p style="color: #d1d5db; font-size: 0.95rem; line-height: 1.6; font-style: italic;">
+                            "Mahi Attri proved to be attentive, responsible, and reliable during her Machine Learning internship at Sentienta QualityAI. 
+                            She consistently showed initiative, handled tasks with confidence, and displayed a rapidly growing command of machine learning. 
+                            Her ensemble modeling and predictive analytics work delivered real results, and her team-first mindset and clear communication made 
+                            her a trusted and valued contributor. Mahi is driven, dependable, and a pleasure to work with—I'm confident she'll go on to accomplish great things."
+                        </p>
+                        <h2 style="font-size: 1rem; font-weight: 600; color: #eab308; margin-top: 20px;">Nizaul Rahman</h2>
+                        <h4 style="color: #9ca3af; font-weight: 500;">CEO, Sentienta QualityAI</h4>
+                        <a href="https://drive.google.com/file/d/1KniB7w5ffzUtJ_KxGTesw3g8WKey055f/view?usp=sharing" target="_blank" style="display: inline-block; margin-top: 15px; font-size: 0.9rem; color: #eab308;">View</a>
+                    </div>
+
+                    <div style="background-color: #191d28; padding: 30px; border-radius: 20px; box-shadow: 0 0 20px #eab308; max-width: 480px; flex: 1 1 450px;">
+                        <p style="color: #d1d5db; font-size: 0.95rem; line-height: 1.6; font-style: italic;">
+                            "Mahi Attri demonstrated exceptional curiosity and diligence throughout her research internship under my supervision. 
+                            She showed a deep understanding of the subject matter and contributed significantly to the success of our paper, 
+                            'Tiger Poaching in The Sundarbans'. Her attention to detail, analytical thinking, and strong work ethic stood out. 
+                            Mahi consistently met deadlines, showed initiative, and delivered high-quality research. I extend my best wishes for her continued success and personal growth."
+                        </p>
+                        <h2 style="font-size: 1rem; font-weight: 600; color: #eab308; margin-top: 20px;">Dr. Tanupriya Choudhury</h2>
+                        <h4 style="color: #9ca3af; font-weight: 500;">Professor, UPES Dehradun<br>Senior Member, IEEE | Honorary Secretary, IETA | Chair, SACSRD</h4>
+                        <a href="https://drive.google.com/file/d/1M71EJTu3OBUF01jJV5hfOF9IgS_Xki8k/view?usp=sharing" target="_blank" style="display: inline-block; margin-top: 15px; font-size: 0.9rem; color: #eab308;">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hackathons" class="fourthSection" style="padding: 10px 20px; background: linear-gradient(90deg, #020617, #111827);">
+            <div class="project" style="text-align: center;">
+                <h1 style="color: #eab308; font-size: 3.5rem; margin-bottom: 20px;">Hackathons</h1>
+                <p style="color: #9ca3af; font-size: 1.2rem; margin-bottom: 40px;">Showcasing Innovation Through Competition</p>
+                <div class="projects_all" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+                    
+                    <div style="background-color: #191d28; padding: 30px; border-radius: 20px; box-shadow: 0 0 15px #eab308; text-align: center;">
+                        <img src="global.jpg" alt="Infosys Hackathon Logo" style="width: 80px; height: 80px; border-radius: 10px; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto;">
+                        <h2 style="color: #eab308; font-size: 1.4rem; margin-bottom: 10px;">Infosys Global Hackathon</h2>
+                        <h4 style="color: #9ca3af; margin-bottom: 10px;">Team Leader · July 2025</h4>
+                        <p style="color: #d1d5db; font-size: 0.95rem;">Proposed ChargeSmart, an AI-powered EV infrastructure optimizer for smart routing, station tracking, forecasting, and unified charging/swapping APIs. Advanced to next round.</p>
+                    </div>
+
+                    <div style="background-color: #191d28; padding: 30px; border-radius: 20px; box-shadow: 0 0 15px #eab308; text-align: center;">
+                        <img src="sih_logo.png" alt="SIH Logo" style="width: 80px; height: 80px; border-radius: 10px; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto;">
+                        <h2 style="color: #eab308; font-size: 1.4rem; margin-bottom: 10px;">Smart India Hackathon</h2>
+                        <h4 style="color: #9ca3af; margin-bottom: 10px;">Participant · September 2024</h4>
+                        <p style="color: #d1d5db; font-size: 0.95rem;">Contributed to an AI/ML system to detect face-swap deepfakes and bolster digital media authenticity.</p>
+                    </div>
+
+                    <div style="background-color: #191d28; padding: 30px; border-radius: 20px; box-shadow: 0 0 15px #eab308; text-align: center;">
+                        <img src="myntra_logo.png" alt="Myntra HackerRamp Logo" style="width: 80px; height: 80px; border-radius: 10px; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto;">
+                        <h2 style="color: #eab308; font-size: 1.4rem; margin-bottom: 10px;">Myntra HackerRamp</h2>
+                        <h4 style="color: #9ca3af; margin-bottom: 10px;">Team Leader · Jun–Jul 2024</h4>
+                        <p style="color: #d1d5db; font-size: 0.95rem;">Ranked top 1,214 of 10,000+ teams. Proposed Myntra Price Tracker, Subscription Model, and Custom Tailoring to enhance UX. Advanced to Round 2.</p>
+                        <a href="https://drive.google.com/drive/folders/1KWKoPEU123nWzX9sOFNg-2A0c9eU_6mz?usp=sharing" target="_blank" style="color: #eab308; display: inline-block; margin-top: 15px;">View Certificates</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+       <div id="certifications" class="fourthSection" style="padding: 180px 20px; background: linear-gradient(90deg, #020617, #111827); text-align: center;">
+            <h1 style="color: #eab308; font-size: 3rem; margin-bottom: 20px;">Certifications</h1>
+
+            <div style="color: #d1d5db; font-size: 0.95rem; line-height: 1.8;">
+                <p style="margin-bottom: 30px;">
+                    <strong>Machine Learning Certification – Simplilearn</strong> &middot; November 2024<br>
+                    <a href="https://drive.google.com/file/d/11qiz1I3tFldOfqf38dT87z6vc_hk1f6_/view?usp=sharing" target="_blank" style="color: #facc15;">View Certificate</a>
+                </p>
+
+                <p>
+                    <strong>Infosys Springboard Certifications</strong> &middot; August 2024<br>
+                    Introduction to Data Science, Natural Language Processing, Artificial Intelligence, Deep Learning<br>
+                    Computer Vision 101, Generative Models for Developers<br>
+                    <a href="https://drive.google.com/drive/folders/1HGNOe2tHD3wCO2n__YZSYucoFFdtQl-U?usp=sharing" target="_blank" style="color: #facc15;">View Certificates</a>
+                </p>
+            </div>
+        </div>
+
         <div class="fifthSection">
-            <div class="contact">
+            <div id="contact" class="contact">
                 <h1>Contact <span class="yellow">Me</span></h1>
                 <p>Have a project in mind? Let's work together to bring your ideas to life!</p>
                 <form action="https://formspree.io/f/myzjqqkj" method="POST" id="contactForm">
